@@ -1,77 +1,77 @@
 <div align="center">
 	<a href="https://go.warp.dev/yazi" target="_blank">
-		<sup>Special thanks to:</sup>
+		<sup>تشکر ویژه از:</sup>
 		<br>
 		<img alt="Warp sponsorship" width="400" src="https://github.com/warpdotdev/brand-assets/blob/main/Github/Sponsor/Warp-Github-LG-02.png">
 		<br>
-		<h>Warp, built for coding with multiple AI agents</b>
+		<h>Warp، ساخته شده برای برنامه‌نویسی با چند عامل هوش مصنوعی</b>
 		<br>
-		<sup>Available for macOS, Linux and Windows</sup>
+		<sup>موجود برای macOS، لینوکس و ویندوز</sup>
 	</a>
 </div>
 
 <br>
 
-## Yazi - ⚡️ Blazing Fast Terminal File Manager
+## Yazi - ⚡️ مدیریت فایل ترمینال فوق‌العاده سریع
 
-Yazi (means "duck") is a terminal file manager written in Rust, based on non-blocking async I/O. It aims to provide an efficient, user-friendly, and customizable file management experience.
+Yazi (به معنی «اردک») یک مدیریت فایل ترمینال نوشته شده با Rust است که بر اساس I/O غیرمسدودکننده (async) طراحی شده است. هدف آن ارائه تجربه‌ای کارآمد، کاربرپسند و قابل تنظیم برای مدیریت فایل‌ها است.
 
-💡 A new article explaining its internal workings: [Why is Yazi Fast?](https://yazi-rs.github.io/blog/why-is-yazi-fast)
+💡 مقاله جدیدی که عملکرد داخلی آن را توضیح می‌دهد: [چرا Yazi سریع است؟](https://yazi-rs.github.io/blog/why-is-yazi-fast)
 
-- 🚀 **Full Asynchronous Support**: All I/O operations are asynchronous, CPU tasks are spread across multiple threads, making the most of available resources.
-- 💪 **Powerful Async Task Scheduling and Management**: Provides real-time progress updates, task cancellation, and internal task priority assignment.
-- 🖼️ **Built-in Support for Multiple Image Protocols**: Also integrated with Überzug++ and Chafa, covering almost all terminals.
-- 🌟 **Built-in Code Highlighting and Image Decoding**: Combined with the pre-loading mechanism, greatly accelerates image and normal file loading.
-- 🔌 **Concurrent Plugin System**: UI plugins (rewriting most of the UI), functional plugins, custom previewer/preloader/spotter/fetcher; Just some pieces of Lua.
-- 📡 **Data Distribution Service**: Built on a client-server architecture (no additional server process required), integrated with a Lua-based publish-subscribe model, achieving cross-instance communication and state persistence.
-- 📦 **Package Manager**: Install plugins and themes with one command, keeping them up-to-date, or pin them to a specific version.
-- 🧰 Integration with ripgrep, fd, fzf, zoxide
-- 💫 Vim-like input/pick/confirm/which/notify component, auto-completion for cd paths
-- 🏷️ Multi-Tab Support, Cross-directory selection, Scrollable Preview (for videos, PDFs, archives, code, directories, etc.)
-- 🔄 Bulk Renaming, Archive Extraction, Visual Mode, File Chooser, [Git Integration](https://github.com/yazi-rs/plugins/tree/main/git.yazi), [Mount Manager](https://github.com/yazi-rs/plugins/tree/main/mount.yazi)
-- 🎨 Theme System, Mouse Support, Trash Bin, Custom Layouts, Virtual Filesystem, CSI u, OSC 52
-- ... and more!
+* 🚀 **پشتیبانی کامل از Async**: همه عملیات I/O به صورت غیرهمزمان انجام می‌شوند و وظایف CPU در چندین رشته پخش می‌شوند تا بیشترین بهره از منابع گرفته شود.
+* 💪 **زمان‌بندی و مدیریت قدرتمند وظایف Async**: ارائه به‌روزرسانی پیشرفت بلادرنگ، لغو وظایف و اختصاص اولویت داخلی برای وظایف.
+* 🖼️ **پشتیبانی داخلی از چند پروتکل تصویر**: همچنین با Überzug++ و Chafa یکپارچه شده، تقریباً تمام ترمینال‌ها را پوشش می‌دهد.
+* 🌟 **هایلایت کد و دیکد تصاویر داخلی**: همراه با مکانیزم پیش‌بارگذاری، بارگذاری تصاویر و فایل‌های عادی را بسیار سریع می‌کند.
+* 🔌 **سیستم افزونه همزمان**: افزونه‌های رابط کاربری، افزونه‌های عملکردی، پیش‌نمایش‌دهنده/پیش‌بارگذار/جستجوگر/دریافت‌کننده سفارشی؛ تنها بخش‌هایی از Lua.
+* 📡 **سرویس توزیع داده‌ها**: بر پایه معماری کلاینت-سرور (بدون نیاز به فرآیند سرور اضافی)، با مدل انتشار-اشتراک مبتنی بر Lua، ارتباط بین نمونه‌ها و پایداری وضعیت.
+* 📦 **مدیریت بسته‌ها**: نصب افزونه‌ها و تم‌ها با یک دستور، به‌روزرسانی خودکار یا قفل کردن نسخه مشخص.
+* 🧰 ادغام با ripgrep، fd، fzf، zoxide
+* 💫 اجزای ورودی/pick/confirm/which/notify مشابه Vim، تکمیل خودکار مسیرهای cd
+* 🏷️ پشتیبانی چند تب، انتخاب بین دایرکتوری‌ها، پیش‌نمایش قابل اسکرول (برای ویدئو، PDF، آرشیو، کد، دایرکتوری‌ها و غیره)
+* 🔄 تغییر نام دسته‌ای، استخراج آرشیو، حالت تصویری، انتخاب‌کننده فایل، [ادغام با Git](https://github.com/yazi-rs/plugins/tree/main/git.yazi)، [مدیریت مانت](https://github.com/yazi-rs/plugins/tree/main/mount.yazi)
+* 🎨 سیستم تم، پشتیبانی از ماوس، سطل زباله، طرح‌بندی سفارشی، سیستم فایل مجازی، CSI u، OSC 52
+* ... و بیشتر!
 
-https://github.com/sxyazi/yazi/assets/17523360/92ff23fa-0cd5-4f04-b387-894c12265cc7
+[https://github.com/sxyazi/yazi/assets/17523360/92ff23fa-0cd5-4f04-b387-894c12265cc7](https://github.com/sxyazi/yazi/assets/17523360/92ff23fa-0cd5-4f04-b387-894c12265cc7)
 
-## Project status
+## وضعیت پروژه
 
-Public beta, can be used as a daily driver.
+نسخه بتای عمومی، قابل استفاده به عنوان ابزار روزانه.
 
-Yazi is currently in heavy development, expect breaking changes.
+Yazi در حال حاضر در توسعه سنگین است و انتظار تغییرات شکسته‌کننده داشته باشید.
 
-## Documentation
+## مستندات
 
-- Usage: https://yazi-rs.github.io/docs/installation
-- Features: https://yazi-rs.github.io/features
+* استفاده: [https://yazi-rs.github.io/docs/installation](https://yazi-rs.github.io/docs/installation)
+* ویژگی‌ها: [https://yazi-rs.github.io/features](https://yazi-rs.github.io/features)
 
-## Discussion
+## بحث و گفتگو
 
-- Discord Server (English mainly): https://discord.gg/qfADduSdJu
-- Telegram Group (Chinese mainly): https://t.me/yazi_rs
+* سرور Discord (به زبان انگلیسی): [https://discord.gg/qfADduSdJu](https://discord.gg/qfADduSdJu)
+* گروه تلگرام (به زبان چینی): [https://t.me/yazi_rs](https://t.me/yazi_rs)
 
-## Image Preview
+## پیش‌نمایش تصویر
 
-| Platform                                                                     | Protocol                               | Support                                  |
-| ---------------------------------------------------------------------------- | -------------------------------------- | ---------------------------------------- |
-| [kitty](https://github.com/kovidgoyal/kitty) (>= 0.28.0)                     | [Kitty unicode placeholders][kgp]      | ✅ Built-in                              |
-| [iTerm2](https://iterm2.com)                                                 | [Inline images protocol][iip]          | ✅ Built-in                              |
-| [WezTerm](https://github.com/wez/wezterm)                                    | [Inline images protocol][iip]          | ✅ Built-in                              |
-| [Konsole](https://invent.kde.org/utilities/konsole)                          | [Kitty old protocol][kgp-old]          | ✅ Built-in                              |
-| [foot](https://codeberg.org/dnkl/foot)                                       | [Sixel graphics format][sixel]         | ✅ Built-in                              |
-| [Ghostty](https://github.com/ghostty-org/ghostty)                            | [Kitty unicode placeholders][kgp]      | ✅ Built-in                              |
-| [Windows Terminal](https://github.com/microsoft/terminal) (>= v1.22.10352.0) | [Sixel graphics format][sixel]         | ✅ Built-in                              |
-| [st with Sixel patch](https://github.com/bakkeby/st-flexipatch)              | [Sixel graphics format][sixel]         | ✅ Built-in                              |
-| [Warp](https://www.warp.dev) (macOS/Linux only)                              | [Inline images protocol][iip]          | ✅ Built-in                              |
-| [Tabby](https://github.com/Eugeny/tabby)                                     | [Inline images protocol][iip]          | ✅ Built-in                              |
-| [VSCode](https://github.com/microsoft/vscode)                                | [Inline images protocol][iip]          | ✅ Built-in                              |
-| [Rio](https://github.com/raphamorim/rio)                                     | [Inline images protocol][iip]          | ❌ Rio renders images at incorrect sizes |
-| [Black Box](https://gitlab.gnome.org/raggesilver/blackbox)                   | [Sixel graphics format][sixel]         | ✅ Built-in                              |
-| [Bobcat](https://github.com/ismail-yilmaz/Bobcat)                            | [Inline images protocol][iip]          | ✅ Built-in                              |
-| X11 / Wayland                                                                | Window system protocol                 | ☑️ [Überzug++][ueberzug] required        |
-| Fallback                                                                     | [ASCII art (Unicode block)][ascii-art] | ☑️ [Chafa][chafa] required               |
+| پلتفرم                                                                       | پروتکل                                 | پشتیبانی                               |
+| ---------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| [kitty](https://github.com/kovidgoyal/kitty) (>= 0.28.0)                     | [Kitty unicode placeholders][kgp]      | ✅ داخلی                                |
+| [iTerm2](https://iterm2.com)                                                 | [Inline images protocol][iip]          | ✅ داخلی                                |
+| [WezTerm](https://github.com/wez/wezterm)                                    | [Inline images protocol][iip]          | ✅ داخلی                                |
+| [Konsole](https://invent.kde.org/utilities/konsole)                          | [Kitty old protocol][kgp-old]          | ✅ داخلی                                |
+| [foot](https://codeberg.org/dnkl/foot)                                       | [Sixel graphics format][sixel]         | ✅ داخلی                                |
+| [Ghostty](https://github.com/ghostty-org/ghostty)                            | [Kitty unicode placeholders][kgp]      | ✅ داخلی                                |
+| [Windows Terminal](https://github.com/microsoft/terminal) (>= v1.22.10352.0) | [Sixel graphics format][sixel]         | ✅ داخلی                                |
+| [st with Sixel patch](https://github.com/bakkeby/st-flexipatch)              | [Sixel graphics format][sixel]         | ✅ داخلی                                |
+| [Warp](https://www.warp.dev) (macOS/Linux فقط)                               | [Inline images protocol][iip]          | ✅ داخلی                                |
+| [Tabby](https://github.com/Eugeny/tabby)                                     | [Inline images protocol][iip]          | ✅ داخلی                                |
+| [VSCode](https://github.com/microsoft/vscode)                                | [Inline images protocol][iip]          | ✅ داخلی                                |
+| [Rio](https://github.com/raphamorim/rio)                                     | [Inline images protocol][iip]          | ❌ تصاویر با اندازه اشتباه رندر می‌شوند |
+| [Black Box](https://gitlab.gnome.org/raggesilver/blackbox)                   | [Sixel graphics format][sixel]         | ✅ داخلی                                |
+| [Bobcat](https://github.com/ismail-yilmaz/Bobcat)                            | [Inline images protocol][iip]          | ✅ داخلی                                |
+| X11 / Wayland                                                                | پروتکل سیستم پنجره                     | ☑️ [Überzug++][ueberzug] لازم است      |
+| Fallback                                                                     | [ASCII art (Unicode block)][ascii-art] | ☑️ [Chafa][chafa] لازم است             |
 
-See https://yazi-rs.github.io/docs/image-preview for details.
+جزئیات در: [https://yazi-rs.github.io/docs/image-preview](https://yazi-rs.github.io/docs/image-preview)
 
 <!-- Protocols -->
 
@@ -86,14 +86,14 @@ See https://yazi-rs.github.io/docs/image-preview for details.
 [ueberzug]: https://github.com/jstkdng/ueberzugpp
 [chafa]: https://hpjansson.org/chafa/
 
-## Special Thanks
+## تشکر ویژه
 
 <img alt="RustRover logo" align="right" width="200" src="https://resources.jetbrains.com/storage/products/company/brand/logos/RustRover.svg">
 
-Thanks to RustRover team for providing open-source licenses to support the maintenance of Yazi.
+تشکر از تیم RustRover برای ارائه مجوزهای متن‌باز جهت حمایت از نگهداری Yazi.
 
-Active code contributors can contact @sxyazi to get a license (if any are still available).
+مشارکت‌کنندگان فعال می‌توانند با @sxyazi تماس بگیرند تا در صورت موجود بودن، مجوز دریافت کنند.
 
-## License
+## مجوز
 
-Yazi is MIT-licensed. For more information check the [LICENSE](LICENSE) file.
+Yazi تحت مجوز MIT است. برای اطلاعات بیشتر فایل [LICENSE](LICENSE) را بررسی کنید.
